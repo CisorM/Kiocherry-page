@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root
+{
+	--padding-container: 100px 0;
+	--color-title: #b3ffda;
+
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+	background-color: #FFF0E1;
+
+}
+
+/*---------------index.html--------------*/
+
+.container
+{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: var(--padding-container);
+} 
+
+.hero
+{
+	width: 100%;
+	height: 100v;
+	min-height: 600px;
+	max-height: 800px;
+	position: relative;
+	display: grid;
+	grid-template-rows: 100px 1fr;
+	color: #ffff;
+
+}
+
+.hero::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('/Images/llaveritosKiocherry1.jpg');
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+	z-index: -1;
+
+}
+
+.nav
+{
+	--padding-container:0;
+}
+
+/*---- Nav de index.html -----*/
+
+.nav
+{
+	--padding-container:0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.nav__logo
+{
+	width: 100px;
+	border-radius: 50%;
+}
+
+.nav__title
+{
+	font-weight: 300;
+}
+
+.nav__items
+{
+	list-style: none;
+}
+
+.nav__link
+{
+	margin-left: auto;
+	padding: 0;
+
+}
+
+.nav__links
+{
+	color: #ffff;
+	text-decoration: none;
+}
+
+.nav__menu
+{
+	margin-left: auto;
+	cursor: pointer;
+	display: none;
+}
+
+.nav__img
+{
+	display: block;
+	width: 30px;
+}
+
+.nav__close
+{
+	display: var(--show,none);
+}
